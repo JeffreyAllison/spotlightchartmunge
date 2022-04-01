@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 import { customers } from './data.js';
 import { coolFactorCountMap } from './data-utils.js';
 
@@ -23,6 +25,7 @@ const config = {
   options: {}
 };
 
+// eslint-disable-next-line no-undef
 const myChart2 = new Chart(
   document.getElementById('myChart2'),
   config
