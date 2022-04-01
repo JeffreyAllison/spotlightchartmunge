@@ -10,8 +10,8 @@ const data = {
   datasets: [
     {
       label: 'Cool Factor Amounts',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'black',
+      borderColor: 'black',
       data: Object.values(countMap)
     }
   ]

@@ -66,3 +66,26 @@ test('receives customer data and returns cool factor count map', (expect) => {
   expect.deepEqual(actual, expected);
 
 });
+
+test('receives customer data and returns gender count map', (expect) => {
+
+  const countMap = {
+    'Agender': 17,
+    'Bigender': 14,
+    'Female': 457,
+    'Genderfluid': 18,
+    'Genderqueer': 11,
+    'Male': 448,
+    'Non-binary': 24,
+    'Polygender': 11
+
+  };
+
+  const expected = countMap;
+
+  const actual = genderCountMap(customers);
+
+  expect.deepEqual(actual, expected);
+
+});
+
