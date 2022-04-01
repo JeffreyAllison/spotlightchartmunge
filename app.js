@@ -3,8 +3,6 @@ import { purchaseFrequencyCountMap } from './data-utils.js';
 
 const countMap = purchaseFrequencyCountMap(customers);
 
-console.log(countMap);
-
 const labels = Object.keys(countMap);
 
 const data = {
