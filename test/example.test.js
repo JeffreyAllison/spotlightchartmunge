@@ -1,4 +1,8 @@
-import { purchaseFrequencyCountMap } from '../data-utils.js';
+import {
+  purchaseFrequencyCountMap,
+  coolFactorCountMap,
+  genderCountMap
+} from '../data-utils.js';
 import { customers } from '../data.js';
 
 const test = QUnit.test;
@@ -34,6 +38,30 @@ test('receives customer data and returns purchase frequency count map', (expect)
   const expected = countMap;
 
   const actual = purchaseFrequencyCountMap(customers);
+
+  expect.deepEqual(actual, expected);
+
+});
+
+test('receives customer data and returns cool factor count map', (expect) => {
+
+  const countMap = {
+    '1': 109,
+    '2': 119,
+    '3': 99,
+    '4': 101,
+    '5': 93,
+    '6': 102,
+    '7': 101,
+    '8': 99,
+    '9': 82,
+    '10': 95
+
+  };
+
+  const expected = countMap;
+
+  const actual = coolFactorCountMap(customers);
 
   expect.deepEqual(actual, expected);
 

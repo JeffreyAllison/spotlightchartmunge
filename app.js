@@ -23,7 +23,7 @@ const config = {
   options: {}
 };
 
-const myChart = new Chart(
-  document.getElementById('myChart'),
+const myChart1 = new Chart(
+  document.getElementById('myChart1'),
   config
 );
